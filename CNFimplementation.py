@@ -46,12 +46,11 @@ def CNF_conversion_whole(grammar):
     c = []
     for item in grammar:
         new_grammar , counter = CNF_conversion(item, counter)
-        print(counter)
         c = [*c, *new_grammar]
         counter += 1
     return c
 
-print("revised grammar",CNF_conversion_whole(u))
+print("revised grammar",CNF_conversion_whole(grammar))
 
 
 # print(new_grammar)
